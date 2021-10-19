@@ -7,7 +7,7 @@ public class CambioDivisa extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-
+//dfodofo
 	}
 
 	public static void main(String[] args) {
