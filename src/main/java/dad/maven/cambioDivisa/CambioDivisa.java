@@ -79,11 +79,13 @@ public class CambioDivisa extends Application {
 
 	private void onCambiarButtonAction(ActionEvent e) {
 
+		double cant;
+ 
 		try {
 			Divisa divisaOriginal = divisa1Combo.getSelectionModel().getSelectedItem();
 			Divisa divisACambiar = divisa2Combo.getSelectionModel().getSelectedItem();
 
-			double cant = Double.parseDouble(valor1Text.getText());
+			cant = Double.parseDouble(valor1Text.getText());
 			Divisa.fromTo(divisaOriginal, divisACambiar, cant);
 			resulText.setText(Divisa.fromTo(divisaOriginal, divisACambiar, cant).toString());
 
