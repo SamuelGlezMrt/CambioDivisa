@@ -86,6 +86,7 @@ public class CambioDivisa extends Application {
 			double cant = Double.parseDouble(valor1Text.getText());
 			Divisa.fromTo(divisaOriginal, divisACambiar, cant);
 			resulText.setText(Divisa.fromTo(divisaOriginal, divisACambiar, cant).toString());
+
 		} catch (NumberFormatException e1) {
 			error.setTitle("CambioDivisa");
 			error.setHeaderText("Error");
